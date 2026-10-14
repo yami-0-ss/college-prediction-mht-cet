@@ -53,7 +53,7 @@ percentile = st.sidebar.number_input("Enter MHT-CET Percentile", min_value=0.0, 
 marks = st.sidebar.number_input("Enter MHT-CET Marks", min_value=0.0, max_value=200.0, value=110.0, step=0.5)
 category = st.sidebar.selectbox("Select Category", ["OPEN", "OBC", "SC", "ST", "VJ/DT", "NT-B", "NT-C", "NT-D", "EWS"])
 
-# Format input DataFrame (adjust feature names if your training dataset used different identifiers)
+# Format input DataFrame matching expected feature structures
 input_data = pd.DataFrame({
     'Rank': [rank],
     'MHT_CET_Percentile': [percentile],
@@ -97,7 +97,7 @@ if st.sidebar.button("Predict Best College"):
                     orientation='h',
                     text_auto='.1%',
                     color='Probability',
-                    color_continuousScale='blues'
+                    color_continuous_scale='blues'  # Fixed parameter
                 )
                 fig.update_layout(yaxis={'categoryorder':'total ascending'}, margin=dict(l=10, r=10, t=10, b=10))
                 st.plotly_chart(fig, use_container_width=True)
