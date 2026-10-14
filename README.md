@@ -3,7 +3,7 @@
 
 An interactive, web-based machine learning application built with **Streamlit** and **CatBoost** to help students predict their best-fit engineering colleges and branches based on their MHT-CET exam metrics (Rank, Percentile, Marks, and Category).
 
-🌐 **Live App:** [View Deployed App](https://college-prediction-mht-cet-cdmeqbetglrqkr2xsxvisd.streamlit.app/)
+🌐 **Live App:** [View Deployed App] https://college-prediction-mht-cet-cdmeqbetglrqkr2xsxvisd.streamlit.app/
 
 ---
 
